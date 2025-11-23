@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntelliiApps - Desenvolvimento Android</title>
+    <title>IntelliiApps - Android App Developer</title>
     <style>
-        /* Reset e estilos gerais */
+        /* Reset and general styles */
         * {
             margin: 0;
             padding: 0;
@@ -16,7 +16,7 @@
         :root {
             --primary: #2196F3;
             --primary-dark: #1976D2;
-            --secondary: #FF9800;
+            --secondary: #4CAF50;
             --dark: #333;
             --light: #f8f9fa;
             --gray: #6c757d;
@@ -63,7 +63,7 @@
         }
 
         .btn-secondary:hover {
-            background-color: #e68900;
+            background-color: #3d8b40;
         }
 
         h1, h2, h3, h4 {
@@ -154,14 +154,14 @@
             margin: 0 auto 30px;
         }
 
-        /* Serviços */
-        .services-grid {
+        /* Apps Section */
+        .apps-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
-        .service-card {
+        .app-card {
             background: white;
             border-radius: 10px;
             padding: 30px;
@@ -170,11 +170,11 @@
             text-align: center;
         }
 
-        .service-card:hover {
+        .app-card:hover {
             transform: translateY(-10px);
         }
 
-        .service-icon {
+        .app-icon {
             width: 80px;
             height: 80px;
             background-color: rgba(33, 150, 243, 0.1);
@@ -185,9 +185,15 @@
             margin: 0 auto 20px;
         }
 
-        .service-icon i {
+        .app-icon i {
             font-size: 2rem;
             color: var(--primary);
+        }
+
+        .play-store-badge {
+            display: inline-block;
+            margin-top: 15px;
+            height: 50px;
         }
 
         /* Portfolio */
@@ -244,7 +250,7 @@
             text-align: center;
         }
 
-        /* Sobre */
+        /* About */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -265,7 +271,7 @@
             object-fit: cover;
         }
 
-        /* Contato */
+        /* Contact */
         .contact {
             background-color: var(--dark);
             color: white;
@@ -346,7 +352,7 @@
             color: var(--primary);
         }
 
-        /* Responsividade */
+        /* Responsive */
         @media (max-width: 992px) {
             h1 {
                 font-size: 2.5rem;
@@ -397,11 +403,11 @@
             <nav class="navbar">
                 <a href="#" class="logo">IntelliiApps</a>
                 <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#apps">Our Apps</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
@@ -413,37 +419,46 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Desenvolvimento de Aplicativos Android</h1>
-            <p>Criamos aplicativos inovadores e de alta qualidade para impulsionar seu negócio no mercado mobile.</p>
-            <a href="#contact" class="btn">Solicitar Orçamento</a>
+            <h1>Educational Android Apps</h1>
+            <p>We develop and publish innovative Android applications focused on education and learning, available on the Google Play Store.</p>
+            <a href="#apps" class="btn">Explore Our Apps</a>
         </div>
     </section>
 
-    <!-- Serviços -->
-    <section id="services">
+    <!-- Apps Section -->
+    <section id="apps">
         <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+            <h2>Our Applications</h2>
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-book"></i>
                     </div>
-                    <h3>Desenvolvimento Android</h3>
-                    <p>Criamos aplicativos nativos para Android usando as melhores práticas e tecnologias mais recentes.</p>
+                    <h3>Educational Apps</h3>
+                    <p>Interactive learning applications for students of all ages, covering various subjects and skills.</p>
+                    <a href="#" class="play-store-badge">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="50">
+                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-puzzle-piece"></i>
                     </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Designs intuitivos e atraentes que proporcionam a melhor experiência para os usuários.</p>
+                    <h3>Educational Games</h3>
+                    <p>Fun and engaging games that teach important concepts while entertaining users.</p>
+                    <a href="#" class="play-store-badge">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="50">
+                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-sync-alt"></i>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Manutenção e Atualização</h3>
-                    <p>Oferecemos suporte contínuo para manter seu aplicativo sempre atualizado e funcionando perfeitamente.</p>
+                    <h3>Learning Tools</h3>
+                    <p>Applications designed to help students organize their studies and improve learning efficiency.</p>
+                    <a href="#" class="play-store-badge">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="50">
+                    </a>
                 </div>
             </div>
         </div>
@@ -452,73 +467,74 @@
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2>Nosso Portfólio</h2>
+            <h2>App Portfolio</h2>
             <div class="portfolio-grid">
-                <!-- Substitua essas divs por suas imagens -->
+                <!-- Replace these with your actual app images -->
                 <div class="portfolio-item">
                     <div class="portfolio-overlay">
-                        <h3>App Financeiro</h3>
+                        <h3>Math Master</h3>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-overlay">
-                        <h3>App de Entrega</h3>
+                        <h3>Language Learner</h3>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-overlay">
-                        <h3>App Educacional</h3>
+                        <h3>Science Explorer</h3>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-overlay">
-                        <h3>App de Saúde</h3>
+                        <h3>History Timeline</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre -->
+    <!-- About -->
     <section id="about">
         <div class="container">
-            <h2>Sobre Nós</h2>
+            <h2>About Us</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>IntelliiApps - Especialistas em Android</h3>
-                    <p>Somos uma empresa especializada no desenvolvimento de aplicativos Android, focada em criar soluções inovadoras que atendam às necessidades específicas de nossos clientes.</p>
-                    <p>Com anos de experiência no mercado, nossa equipe combina conhecimento técnico com criatividade para entregar produtos de alta qualidade que superam as expectativas.</p>
-                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    <h3>IntelliiApps - Android App Developer</h3>
+                    <p>We are an Android application development company focused on creating educational and utility apps for the Google Play Store.</p>
+                    <p>Our mission is to develop high-quality applications that make learning accessible, engaging, and effective for users worldwide.</p>
+                    <p>While we specialize in educational applications, we also develop apps in other categories, always maintaining our commitment to quality and user satisfaction.</p>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
                 <div class="about-image">
-                    <!-- Substitua por sua imagem -->
+                    <!-- Replace with your image -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
+    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Entre em Contato</h2>
+            <h2>Contact Us</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Vamos conversar sobre seu projeto</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Sua Cidade, Seu Estado</p>
-                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
-                    <p><i class="fas fa-envelope"></i> contato@intelliapps.com</p>
+                    <h3>Get in touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Your City, Your State</p>
+                    <p><i class="fas fa-envelope"></i> contact@intelliapps.com</p>
+                    <p><i class="fas fa-globe"></i> www.intelliapps.com</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" placeholder="Seu Nome" required>
-                    <input type="email" placeholder="Seu E-mail" required>
-                    <input type="text" placeholder="Assunto" required>
-                    <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
@@ -528,10 +544,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2023 IntelliiApps. Todos os direitos reservados.</p>
+                <p>&copy; 2023 IntelliiApps. All rights reserved.</p>
                 <ul class="social-links">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-play"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
@@ -539,12 +555,12 @@
     </footer>
 
     <script>
-        // Menu mobile
+        // Mobile menu
         document.querySelector('.mobile-menu').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
 
-        // Smooth scroll para links internos
+        // Smooth scroll for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
